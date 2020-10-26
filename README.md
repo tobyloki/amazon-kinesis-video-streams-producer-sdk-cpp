@@ -8,8 +8,8 @@
 ### Kinesis Video Streams & Rekognition (must be in us-west-2 region)
 - https://aws.amazon.com/blogs/machine-learning/easily-perform-facial-analysis-on-live-feeds-by-creating-a-serverless-video-analytics-environment-with-amazon-rekognition-video-and-amazon-kinesis-video-streams/
 
+### Setup for this version
 `
-For this version
 Install packages
 sudo apt-get install cmake m4 git build-essential
 sudo apt-get install libssl-dev libcurl4-openssl-dev liblog4cplus-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev gstreamer1.0-plugins-base-apps gstreamer1.0-plugins-bad gstreamer1.0-plugins-good gstreamer1.0-plugins-ugly gstreamer1.0-tools
@@ -32,8 +32,10 @@ export AWS_SECRET_ACCESS_KEY=<your secret key>
 
 Run streaming demo
 gst-launch-1.0 -v v4l2src device=/dev/video0 ! videoconvert ! video/x-raw,format=I420,width=640,height=480,framerate=30/1 ! x264enc  bframes=0 key-int-max=45 bitrate=500 tune=zerolatency ! video/x-h264,stream-format=avc,alignment=au ! kvssink stream-name=<your stream name> storage-size=128
+`
 
-For the old version
+### Setup for the old version
+`
 Install packages
 sudo apt-get install git
 sudo apt-get install cmake
