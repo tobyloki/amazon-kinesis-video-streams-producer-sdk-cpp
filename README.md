@@ -33,6 +33,7 @@ export GST_PLUGIN_PATH=`pwd`/build
 export LD_LIBRARY_PATH=`pwd`/open-source/local/lib
 export AWS_ACCESS_KEY_ID=<your access key>
 export AWS_SECRET_ACCESS_KEY=<your secret key>
+cd ~
 ```
 
 ###### Run streaming demo
