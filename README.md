@@ -1,4 +1,9 @@
 # Instructions
+
+- https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp/
+- https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp/blob/master/docs/linux.md
+- (old version) https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-cpp/tree/f7bea929f15dba649858882ea746a9f0739eebab
+
 `
 1. Install packages
 sudo apt-get install cmake m4 git build-essential
