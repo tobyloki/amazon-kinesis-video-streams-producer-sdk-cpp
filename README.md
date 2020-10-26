@@ -22,7 +22,6 @@ git reset --hard 017ab505f0724a0e385e3a1298d48bf92406f13b
 mkdir -p amazon-kinesis-video-streams-producer-sdk-cpp/build
 cd amazon-kinesis-video-streams-producer-sdk-cpp/build
 cmake .. -DBUILD_GSTREAMER_PLUGIN=ON
-cd ..
 make
 ```
 
